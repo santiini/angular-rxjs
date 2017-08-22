@@ -1,0 +1,10 @@
+.food {
+  width: 60%;
+  margin: 0 auto;
+}
+.food-list {
+  padding: 10px;
+}
+.food-name {
+  color: red;
+}

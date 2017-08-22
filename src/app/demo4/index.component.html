@@ -1,0 +1,43 @@
+<div class="food">
+  <h4>{{title}}</h4>
+  <div>{{myHobby | json}}</div>
+  <div class="food-list" *ngFor="let item of foodList">
+  <!-- <div class="food-list" *ngFor="let item of foodList; let i = index"> -->
+      <div>id: {{item.id}}</div>
+      <div>index:{{i}}</div>
+      <div class="foot-name">{{item.name}}</div>
+  </div>
+  <!-- 1. v-for -->
+  <!-- <div class="" *ngFor="let item of foodList"> -->
+  <!-- 2. item,index  -->
+  <!-- <div class="" *ngFor="let item of foodList; index as i"> -->
+  <!-- 3. template语法  -->
+  <!-- <div class="" template="ngFor let item of foodList; index as i">
+    <div class="">item:{{item.name}}</div>
+    <div class="">index: {{i}}</div>
+    <div class=""></div>
+  </div> -->
+
+  <!-- ng-template元素 -->
+  <!-- <div class="total"> -->
+    <!-- 4. 省略语法-->
+    <!-- <ng-template ngFor let-item [ngForOf]="foodList" let-n="index">
+      <div class="">name: {{item.name}}</div>
+      <div class="">index: {{n}}</div>
+    </ng-template> -->
+
+    <!-- 5 -->
+    <!-- <ng-template ngFor [ngForOf]="foodList"  let-item="$implicit" let-i="index">
+      <div class="">name: {{item.name}}</div>
+      <div class="">index: {{i}}</div>
+    </ng-template> -->
+  <!-- </div> -->
+
+  <!-- ok! -->
+  <!-- <div class="">
+    <ng-template ngFor let-item [ngForOf]="foodList" let-i="index" [ngForTrackBy]="trackByFn">
+        <div>index: {{i}}</div>
+        <div class="">name: {{item.name}}</div>
+    </ng-template>
+  </div> -->
+</div>

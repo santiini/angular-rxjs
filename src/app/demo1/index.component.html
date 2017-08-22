@@ -1,0 +1,13 @@
+<div class="food">
+  <h4>{{title}}</h4>
+  <div class="food-list"
+    *ngFor="let item of foodList; index as i; first as isFirst; last as isLast">
+    <div>id: {{item.id}}</div>
+    <div class="">index: {{i}}</div>
+    <div class="">isFirst: {{isFirst}}</div>
+    <div class="">isLast: {{isLast}}</div>
+    <div class="">isFirst: {{isLast}}</div>
+    <div class="foot-name">{{item.name}}</div>
+  </div>
+  <div class="">{{myHobby | json}}</div>
+</div>
