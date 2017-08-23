@@ -1,0 +1,23 @@
+<div class="">
+  <h4>{{title}}</h4>
+  <p>Child1组件之内</p>
+  <div class="text-container">
+    <div class="">count当前值：{{count}}</div>
+    <div class="">
+      <button (click)="increment()">++++</button>
+      <button (click)="decrement()">----</button>
+    </div>
+    <div class="">子组件name： {{name}}</div>
+    <div class="">子组件其他：{{childName}}</div>
+    <div class="text-container">
+      <h4>子组件的其他事件测试:clickButton</h4>
+      <div class="">
+        <button (click)="triggerClickButton()">clickButton事件</button>
+      </div>
+    </div>
+    <div class="">
+      <!-- <h4>双向绑定 - ngModel</h4> -->
+      <!-- <input type="text" [(ngModel)]="username"> -->
+    </div>
+  </div>
+</div>

@@ -6,6 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.css'],
 })
 export class Demo2Component {
-  name = 'demo2';
-  content = '这是demo2';
+  name: string = 'demo2';
+
+  content: string = '这是demo2';
+
+  childValue: number = 111;
+
+  childName: string = '子组件name';
+
+  changeMsg: string;
+
+  buttonChickMsg: string;
+
+  countChange($event: number) {
+    this.changeMsg = `子组件change事件触发，值是：${$event}`;
+  }
+
+  childButton(msg) {
+    console.log(event); // 事件对象;
+    console.log(msg);
+    this.buttonChickMsg = `按钮点击事件：${msg.name}, ${msg.time}`;
+  }
 }
