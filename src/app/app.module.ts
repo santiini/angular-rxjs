@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // 路由引入
 import { AppRouterModel } from './app.route';
@@ -37,6 +38,8 @@ import { Child1Component } from './child1/index.component';
     BrowserModule,
     // 路由类
     AppRouterModel,
+    // 表单类 -- 使用表单是必须引用;
+    FormsModule,
 
     // // 路由规则的定义 -- RouterModule.forRoot方法
     // RouterModule.forRoot(
